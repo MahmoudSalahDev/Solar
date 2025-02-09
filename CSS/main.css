@@ -54,134 +54,128 @@ main {
     }
 }
 
-/* @media screen and (max-width:575px) {
-    .container{
-    padding-block: 20px;
-    }
-} */
-
-
-
 
 /* start nav */
-nav {
+header {
     background-color: #0B9586;
     padding: 20px 0;
 }
 
-nav .container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* margin: 0 100px; */
     margin: auto;
 }
+
 @media screen and (max-width:575px) {
-    nav .container  {
+    header .container {
         flex-direction: column;
         gap: 20px;
     }
 }
 
 
-nav .container .img {
+header .container .img {
     width: 157px;
     height: 54px;
-    /* object-fit: cover; */
     background-color: #0B9586;
 }
 
-nav .container .img img {
+header .container .img img {
     width: 157px;
     height: 54px;
     object-fit: cover;
     opacity: .5;
 }
 
-nav .container ul {
+header .container ul {
     display: flex;
     gap: 20px;
 }
+
 @media screen and (max-width:575px) {
-    nav .container ul  {
+    header .container ul {
         gap: 10px;
     }
 }
 
-nav .container ul li a {
+header .container ul li a {
     padding: 5px 15px;
     color: white;
 }
 
-nav .container ul li a.active {
+header .container ul li a.active {
     background: #0000000F;
     border-radius: 5px;
     border-bottom: 3px solid #0000004D
 }
 
-nav .container .call-us {
+header .container .call-us {
     color: white;
 }
+
 @media screen and (max-width:767px) {
-    nav .container .call-us  {
+    header .container .call-us {
         display: none;
     }
 }
 
-nav .container .call-us p {
+header .container .call-us p {
     text-align: end;
     font-size: 18px;
     font-weight: 400;
 }
 
-nav .container .call-us span {
+header .container .call-us span {
     font-size: 24px;
     font-weight: 700;
 }
+
 @media screen and (max-width:991px) {
-    nav .container .call-us span {
+    header .container .call-us span {
         font-size: 18px;
     }
 }
 
 /* end nav */
 /* start header */
-header {
+.home {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.342) 0% 100%), url(../images/header.png);
     background-position: center;
     background-size: cover;
-    /* padding: 150px 0; */
 }
 
-header .container {
+.home .container {
     margin: auto;
     position: relative;
     padding: 150px 0;
 }
+
 @media screen and (max-width:575px) {
-    header .container {
+    .home .container {
         padding: 150px 30px;
     }
 }
 
-header .prograss {
+.home .prograss {
     display: flex;
     align-items: center;
     gap: 20px;
     color: white;
-    /* margin-bottom: 100px; */
     position: absolute;
     top: 50px;
 }
 
-header .prograss .bar {
+.home .prograss .bar {
     width: 220px;
     height: 3px;
     position: relative;
     background-color: rgba(0, 0, 0, 0.315);
 }
 
-header .prograss .bar::before {
+.home .prograss .bar::before {
     position: absolute;
     content: "";
     left: 0;
@@ -191,13 +185,13 @@ header .prograss .bar::before {
     background-color: white;
 }
 
-header .paragraph {
+.home .paragraph {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-header h2 {
+.home h2 {
     color: white;
     font-family: Inter;
     font-size: 52px;
@@ -207,7 +201,7 @@ header h2 {
     text-align: left;
 }
 
-header p {
+.home p {
     color: white;
     font-family: Inter;
     font-size: 20px;
@@ -216,32 +210,34 @@ header p {
     text-align: left;
 }
 
-header .buttons {
+.home .buttons {
     display: flex;
     gap: 30px;
 }
+
 @media screen and (max-width:575px) {
-    header .buttons {
+    .home .buttons {
         flex-direction: column;
     }
 }
 
-header .buttons a {
+.home .buttons a {
     padding: 12px 34px;
     border-radius: 25px;
 }
+
 @media screen and (max-width:575px) {
-    header .buttons a {
+    .home .buttons a {
         width: fit-content;
     }
 }
 
-header .buttons a.today {
+.home .buttons a.today {
     background-color: #3CAB90;
     color: white;
 }
 
-header .buttons a.back {
+.home .buttons a.back {
     background-color: #FFBB1C;
 }
 
@@ -262,13 +258,15 @@ header .buttons a.back {
     display: flex;
     gap: 100px;
 }
+
 @media screen and (max-width:991px) {
-    .installers .all  {
+    .installers .all {
         gap: 50px;
     }
 }
+
 @media screen and (max-width:767px) {
-    .installers .all  {
+    .installers .all {
         flex-direction: column;
     }
 }
@@ -316,8 +314,9 @@ header .buttons a.back {
         height: fit-content;
     }
 }
+
 @media screen and (max-width:767px) {
-    .installers .all .images  {
+    .installers .all .images {
         display: flex;
         justify-content: center;
     }
@@ -345,8 +344,9 @@ header .buttons a.back {
     width: 50%;
     border-radius: 12px;
 }
+
 @media screen and (max-width:767px) {
-    .installers .all .images .yellow  {
+    .installers .all .images .yellow {
         width: 150px;
         left: 0px;
     }
@@ -563,6 +563,7 @@ header .buttons a.back {
         width: 80%;
     }
 }
+
 @media screen and (max-width:575px) {
     .repairs .all {
         padding: 10px;
@@ -874,8 +875,9 @@ header .buttons a.back {
     gap: 28px;
     width: 400px;
 }
+
 @media screen and (max-width:575px) {
-    .what .words  {
+    .what .words {
         width: 80%;
     }
 }
